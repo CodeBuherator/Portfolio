@@ -1,0 +1,222 @@
+/* ==== GENERAL SETTINGS ==== */
+
+:root {
+  --nav-color: #000;
+  --contact-border-color: #AAA;
+  --footer-copy-color: #777;
+}
+html{
+  font-size: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+.container{
+  max-width: 980px;
+  min-width: 600px;
+  padding: 0 3rem;
+  margin: auto;
+  text-align: center;
+}
+h2{
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin: 2rem;
+}
+
+/* ==== HEADER ==== */
+
+header{
+  width: 100%;
+  height: 100vh;
+  background-image: radial-gradient(circle, #00000000, #000000AA), url("assets/header_bg_original.jpg");
+  background-size: cover;
+  background-position: top left;
+}
+header h1{
+  font-size: 5rem;
+  font-weight: 500;
+}
+header p{
+  font-size: 3rem;
+  font-weight: 400;
+}
+.text-box{
+  position: relative;
+  top: 30vh;
+  text-align: left;
+}
+@keyframes show-name{
+  from {margin-left: -1000px;}
+  to {margin-left: 0;}
+}
+.move-1{
+  animation: show-name 2s ease-in-out;
+}
+.move-2{
+  animation: show-name 2.5s ease-in-out;
+}
+.move-3{
+  animation: show-name 3s ease-in-out;
+}
+
+/* ==== NAV ==== */
+
+nav .container{
+  text-align: center;
+}
+nav .container ul{
+  list-style: none;
+}
+nav .container ul li{
+  display: inline-block;
+  padding: 2rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+nav .container ul li a{
+  color: var(--nav-color);
+}
+nav .container ul li a:hover{
+  border-bottom: 1px solid var(--nav-color);
+}
+
+/* ==== EXPERIENCE ==== */
+
+#experience{
+  text-align: center;
+  background:
+  radial-gradient(black 15%, transparent 16%) 0 0,
+  radial-gradient(black 15%, transparent 16%) 8px 8px,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+  background-color:#282828;
+  background-size:16px 16px;
+  color: #FFF;
+  padding: 30px 0;
+}
+#experience .container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#experience .container .exp-box{
+  width: 180px;
+  margin: 20px;
+  font-size: 1.65rem;
+  text-align: center;
+}
+#experience .container .exp-box img{
+  width: 180px;
+  height: 200px;
+}
+#experience .container .exp-box h3{
+  margin: 10px;
+  font-weight: 500;
+}
+
+/* ==== PROJECTS ==== */
+
+#projects{
+  text-align: center;
+}
+#projects .container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#projects .container .pro-box{
+  width: 250px;
+  margin: 20px;
+  font-size: 1.65rem;
+  text-align: center;
+}
+#projects .container .pro-box img{
+  width: 250px;
+  height: 200px;
+}
+#projects .container .pro-box h3{
+  margin: 10px;
+  font-weight: 300;
+}
+
+/* ==== CONTACT ==== */
+
+#contact{
+  background:
+  radial-gradient(black 15%, transparent 16%) 0 0,
+  radial-gradient(black 15%, transparent 16%) 8px 8px,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+  background-color:#282828;
+  background-size:16px 16px;
+  color: #FFF;
+  padding: 20px 0;
+}
+#contact .container form{
+  width: 400px;
+  margin: 4rem auto;
+}
+#contact .container form input{
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid var(--contact-border-color);
+  border-radius: 4px;
+  font-size: 1.5rem;
+}
+#contact .container form textarea{
+  display: block;
+  width: 100%;
+  height: 10rem;
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid var(--contact-border-color);
+  border-radius: 4px;
+  font-size: 1.5rem;
+}
+#contact .container form button{
+  display: block;
+  width: 40%;
+  padding: 1rem;
+  margin: 1rem auto;
+  border: 1px solid var(--contact-border-color);
+  border-radius: 4px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+#contact .container form button:hover{
+  font-weight: bold;
+}
+
+/* ==== FOOTER ==== */
+
+footer .container{
+  text-align: center;
+}
+footer .container ul{
+  list-style: none;
+}
+footer .container ul li{
+  display: inline-block;
+  padding: 2rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+footer .container ul li a{
+  color: var(--nav-color);
+}
+footer .container ul li a:hover{
+  border-bottom: 1px solid var(--nav-color);
+}
+footer .container p{
+  line-height: 5rem;
+  font-size: 1.25rem;
+}
